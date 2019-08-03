@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Main</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <link rel="stylesheet" href="styles.css">
+  <script src="https://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="main.js"></script>
+</head>
+<body>
+
+<div class="payment-page">
+  <div class="form">
+    <form class="payment-form">
+      <select required id="profList" name="payerType">
+        <option>Юридическое лицо</option>
+        <option>Физическое лицо</option>
+      </select>
+      <input required id="ndcInputFiled" type="text"/>
+      <input required id="nameInputFiled" type="text" placeholder="Name"/>
+      <select required id="organizationList" name="organizationType">
+        <option>OOO</option>
+        <option>OAO</option>
+        <option>ЗAO</option>
+        <option>ИП</option>
+      </select>
+      <input required id="innInputField" type="text" placeholder="INN"/>
+      <span id="errMsgInn" style="white-space:pre"></span>
+      <div id="checkBox" hidden>
+        <input type="checkbox" class="checkbox" id="simpleTaxation"/>
+        <label for="simpleTaxation">Simple Taxation</label>
+      </div>
+      <input required id="phoneNumberInputField" type="text" placeholder="Phone Number"/>
+      <span id="errMsgPhone" style="white-space:pre"></span>
+      <input required id="paymentSum" type="text" placeholder="Payment Sum"/>
+      <input required id="resultSum" type="text" placeholder="Result" disabled/>
+      <input type="submit" class="submit_btn" id="submitButton" name="submitButton">
+    </form>
+  </div>
+</div>
+
+
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+</html>
