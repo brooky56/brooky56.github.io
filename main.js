@@ -11,7 +11,7 @@ function getProfListStatus() {
             } else if (selectedProf === "Юридическое лицо") {
                 $("#organizationList").prop("disabled", false);
                 $("#ndcInputFiled").prop({disabled: 'true', placeholder: "17"});
-                $("#checkBox").attr("hidden", false);
+                $("#checkBoxBlock").attr("hidden", false);
                 $("#ndcInputFiled").val(17);
             }
         });
