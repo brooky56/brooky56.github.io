@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>Main</title>
+  <title>Payment page</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="styles.css">
@@ -28,13 +28,14 @@
       </select>
       <input required id="innInputField" type="text" placeholder="INN"/>
       <span id="errMsgInn" style="white-space:pre"></span>
-      <div id="checkBox" hidden>
+      <div id="checkBoxBlock" hidden>
         <input type="checkbox" class="checkbox" id="simpleTaxation"/>
         <label for="simpleTaxation">Simple Taxation</label>
       </div>
       <input required id="phoneNumberInputField" type="text" placeholder="Phone Number"/>
       <span id="errMsgPhone" style="white-space:pre"></span>
       <input required id="paymentSum" type="text" placeholder="Payment Sum"/>
+      <span id="errMsgPayment" style="white-space:pre"></span>
       <input required id="resultSum" type="text" placeholder="Result" disabled/>
       <input type="submit" class="submit_btn" id="submitButton" name="submitButton">
     </form>
